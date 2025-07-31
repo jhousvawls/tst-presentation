@@ -67,9 +67,11 @@
         }
         /* Carousel sizing */
         .carousel-container {
-            transform: scale(1.25);
-            transform-origin: center;
             margin: 1.5rem 0;
+        }
+        .carousel-container img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
         }
     </style>
 </head>
@@ -372,11 +374,63 @@
             </div>
         </section>
 
-        <!-- Slide 11: Project 5 - PAM Data Analyzer -->
+        <!-- Slide 11: Project 5 - Meal Planning App -->
         <section class="slide" data-slide="11">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                 <div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <div class="relative">
+                        <!-- Carousel Container -->
+                        <div class="carousel-container overflow-hidden rounded-lg">
+                            <div class="carousel-track flex transition-transform duration-300 ease-in-out" id="project6-carousel">
+                                <div class="carousel-slide w-full flex-shrink-0">
+                                    <img src="screenshots/mealplan1.png" alt="MealMate Dashboard - Welcome dashboard with meal planning overview" class="w-full">
+                                </div>
+                                <div class="carousel-slide w-full flex-shrink-0">
+                                    <img src="screenshots/mealplan2.png" alt="Recipe Box - Recipe management and import functionality" class="w-full">
+                                </div>
+                                <div class="carousel-slide w-full flex-shrink-0">
+                                    <img src="screenshots/mealplan3.png" alt="Smart Grocery List - Automated grocery list generation from meal plans" class="w-full">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Navigation -->
+                        <button class="carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all" onclick="prevSlide('project6-carousel')">
+                            &#8249;
+                        </button>
+                        <button class="carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all" onclick="nextSlide('project6-carousel')">
+                            &#8250;
+                        </button>
+                        
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators flex justify-center mt-4 space-x-2">
+                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project6-carousel', 0)"></button>
+                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project6-carousel', 1)"></button>
+                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project6-carousel', 2)"></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
                     <span class="font-semibold text-wpe-blue uppercase tracking-widest">Project 5</span>
+                    <h2 class="text-4xl font-bold my-3">Meal Planning App</h2>
+                    <p class="text-lg text-gray-600 mb-6"><b>The Problem:</b> Meal planning is disorganized. Coordinating with family, managing recipes, and creating grocery lists is a constant hassle. <br><b>The Solution:</b> A collaborative app that uses AI to suggest meals, organizes recipes, and generates shared grocery lists automatically.</p>
+                    <h3 class="font-lora text-xl font-bold mb-3">Tech Stack:</h3>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">OpenAI</span>
+                    </div>
+                    <a href="#" class="btn btn-outline cursor-not-allowed" aria-disabled="true">Local Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: Project 6 - PAM Data Analyzer -->
+        <section class="slide" data-slide="12">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                 <div>
+                    <span class="font-semibold text-wpe-blue uppercase tracking-widest">Project 6</span>
                     <h2 class="text-4xl font-bold my-3">PAM Data Analyzer</h2>
                     <p class="text-lg text-gray-600 mb-6"><b>The Problem:</b> Sales teams need to blend quantitative sales data with qualitative coaching insights. <br><b>The Solution:</b> A customizable dashboard that tracks metrics, sets goals, and uses AI to generate feedback from meeting notes.</p>
                     <h3 class="font-lora text-xl font-bold mb-3">Tech Stack:</h3>
@@ -393,7 +447,7 @@
                     <div class="relative">
                         <!-- Carousel Container -->
                         <div class="carousel-container overflow-hidden rounded-lg">
-                            <div class="carousel-track flex transition-transform duration-300 ease-in-out" id="project5-carousel">
+                            <div class="carousel-track flex transition-transform duration-300 ease-in-out" id="project7-carousel">
                                 <div class="carousel-slide w-full flex-shrink-0">
                                     <img src="screenshots/pamdash-team review.png" alt="Team Review Dashboard - Comprehensive team performance analysis" class="w-full">
                                 </div>
@@ -404,25 +458,25 @@
                         </div>
                         
                         <!-- Carousel Navigation -->
-                        <button class="carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all" onclick="prevSlide('project5-carousel')">
+                        <button class="carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all" onclick="prevSlide('project7-carousel')">
                             &#8249;
                         </button>
-                        <button class="carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all" onclick="nextSlide('project5-carousel')">
+                        <button class="carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all" onclick="nextSlide('project7-carousel')">
                             &#8250;
                         </button>
                         
                         <!-- Carousel Indicators -->
                         <div class="carousel-indicators flex justify-center mt-4 space-x-2">
-                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project5-carousel', 0)"></button>
-                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project5-carousel', 1)"></button>
+                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project7-carousel', 0)"></button>
+                            <button class="indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" onclick="goToSlide('project7-carousel', 1)"></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 12: The Common Thread -->
-        <section class="slide flex-col justify-center items-center text-center" data-slide="12">
+        <!-- Slide 13: The Common Thread -->
+        <section class="slide flex-col justify-center items-center text-center" data-slide="13">
              <div class="w-full max-w-4xl">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">The Common Thread</h2>
                 <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Every one of these projects solves a real-world problem. They were brought to life not by complex, custom-coded backends, but by intelligently combining best-in-class tools.</p>
@@ -436,8 +490,8 @@
             </div>
         </section>
 
-        <!-- Slide 13: Q&A -->
-        <section class="slide flex-col justify-center items-center text-center" data-slide="13">
+        <!-- Slide 14: Q&A -->
+        <section class="slide flex-col justify-center items-center text-center" data-slide="14">
             <div class="w-full max-w-4xl">
                 <h1 class="text-6xl md:text-8xl font-bold mb-8">Questions?</h1>
                 <p class="text-2xl text-gray-600">Thank You</p>
@@ -450,7 +504,7 @@
     <div class="fixed bottom-0 left-0 right-0 bg-white/70 backdrop-blur-sm border-t border-gray-200">
         <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
             <button id="prev-btn" class="btn btn-outline">&larr; Prev</button>
-            <div id="slide-counter" class="text-sm font-medium text-gray-600">Slide 1 / 12</div>
+            <div id="slide-counter" class="text-sm font-medium text-gray-600">Slide 1 / 14</div>
             <button id="next-btn" class="btn">Next &rarr;</button>
         </div>
     </div>
@@ -577,7 +631,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             initCarousel('project2-carousel');
             initCarousel('project4-carousel');
-            initCarousel('project5-carousel');
+            initCarousel('project6-carousel');
+            initCarousel('project7-carousel');
         });
     </script>
 </body>
