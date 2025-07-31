@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vibe Coding Journey | WP Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to match WP Engine branding */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #002447; /* Navy */
+            transition: background-color 0.5s ease;
+        }
+        h1, h2, h3, .font-lora {
+            font-family: 'Lora', serif;
+            color: #002447; /* Navy */
+        }
+        .bg-wpe-navy { background-color: #002447; }
+        .bg-wpe-blue { background-color: #006BD6; }
+        .text-wpe-blue { color: #006BD6; }
+        .text-wpe-teal { color: #0ECAD4; }
+        .border-wpe-teal { border-color: #0ECAD4; }
+
+        /* Slide transition styles */
+        .slide {
+            display: none;
+            min-height: 80vh;
+        }
+        .slide.active {
+            display: flex;
+        }
+        /* Custom button style */
+        .btn {
+            background-color: #006BD6; /* Blue */
+            color: white;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #0052a3;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: #006BD6;
+            border: 2px solid #006BD6;
+        }
+        .btn-outline:hover {
+            background-color: #006BD6;
+            color: white;
+        }
+        .tech-tag {
+            background-color: #e0f2fe;
+            color: #0c4a6e;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        /* Style for editable content */
+        [contenteditable="true"] {
+            cursor: text;
+        }
+        [contenteditable="true"]:hover, [contenteditable="true"]:focus {
+            outline: 2px dashed #0ECAD4; /* WPE Teal */
+            background-color: #F0FAFB;
+            box-shadow: 0 0 0 4px rgba(14, 202, 212, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <!-- Main Presentation Container -->
+    <div id="presentation-container" class="w-full max-w-6xl mx-auto p-4 sm:p-8">
+
+        <!-- Slide 1: Title -->
+        <section class="slide active flex-col justify-center items-center text-center" data-slide="1">
+            <div class="w-full max-w-4xl">
+                <span class="font-semibold text-wpe-blue uppercase tracking-widest" contenteditable="true">A Developer's Journey</span>
+                <h1 class="text-5xl md:text-7xl font-bold mt-4 mb-6" contenteditable="true">From Agency Owner to Vibe Coder</h1>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto" contenteditable="true">How I leverage WP Engine to build powerful applications without writing a line of code.</p>
+                <div class="mt-10">
+                    <p class="text-lg text-gray-500" contenteditable="true">by John Housholder : July 31, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: The Origin Story -->
+        <section class="slide flex-col justify-center" data-slide="2">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6" contenteditable="true">My Origin Story</h2>
+                    <div class="space-y-4 text-lg text-gray-700" contenteditable="true">
+                        <p>I'm a sales guy by trade, but I've always been fascinated by what's possible with technology. I ran a WordPress development agency, <b class="text-wpe-blue">AhSoDesigns.com</b>, not because I could code, but because I understood development concepts and client needs.</p>
+                        <p>My philosophy was simple: start with WordPress. Its <b class="text-wpe-teal">ease of use</b> and powerful CMS capabilities allowed us to deliver incredible value, quickly. This success eventually led to our acquisition by <b class="text-wpe-blue">Dragon Army</b>.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center" alt="Team collaboration and brainstorming" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-lora font-bold mb-4" contenteditable="true">The "Vibe Coder"</h3>
+                    <p class="text-gray-600" contenteditable="true">I don't write code. I "vibe code."</p>
+                    <p class="mt-2 text-gray-600" contenteditable="true">It's about having the vision and understanding the architecture to bring ideas to life, using powerful platforms and tools to do the heavy lifting. It's about solving problems, not just pushing commits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Why I'm Now "Vibe Coding" Outside the Box -->
+        <section class="slide flex-col justify-center items-center text-center" data-slide="3">
+             <div class="w-full max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" contenteditable="true">Evolving Beyond Traditional WordPress</h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto" contenteditable="true">The web is evolving, and so are the tools. While WordPress remains the undisputed king of content, modern user experiences demand a more dynamic, app-like feel. This is where Headless comes in.</p>
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300&h=200&fit=crop&crop=center" alt="React development" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">React Front-Ends</h3>
+                        <p class="text-gray-600" contenteditable="true">For rich, interactive user experiences that feel fast and fluid.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300&h=200&fit=crop&crop=center" alt="WordPress CMS interface" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">WordPress CMS</h3>
+                        <p class="text-gray-600" contenteditable="true">The reliable, user-friendly backend for managing all content and data.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-wpe-teal border-2">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center" alt="High-performance hosting infrastructure" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2 text-wpe-blue" contenteditable="true">WP Engine Node Engine</h3>
+                        <p class="text-gray-600" contenteditable="true">The high-performance hosting that ties it all together, enabling decoupled architecture seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: The Vibe Coder's Toolkit -->
+        <section class="slide flex-col justify-center items-center text-center" data-slide="4">
+            <div class="w-full max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" contenteditable="true">The Modern "Vibe Coder's" Toolkit</h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto" contenteditable="true">"Vibe coding" is made possible by a new class of AI-powered tools and platforms that handle the heavy lifting of development.</p>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop&crop=center" alt="AI coding assistant" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">AI Code Assistants</h3>
+                        <p class="text-gray-600" contenteditable="true">Tools integrated into your editor that write, debug, and explain code. (e.g., Claude, Copilot)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=300&h=200&fit=crop&crop=center" alt="Design and prototyping tools" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">AI Design & Prototyping</h3>
+                        <p class="text-gray-600" contenteditable="true">Platforms that turn ideas, wireframes, or prompts into functional UX and front-end code. (e.g., Gemini Canvas)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://images.unsplash.com/photo-1676299081847-824916de030a?w=300&h=200&fit=crop&crop=center" alt="AI conversation interface" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">Prompt Engineering LLMs</h3>
+                        <p class="text-gray-600" contenteditable="true">Conversational AIs used for brainstorming logic, generating content, and refining ideas. (e.g., ChatGPT)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-wpe-teal border-2">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center" alt="High-performance hosting" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2 text-wpe-blue" contenteditable="true">High-Performance Hosting</h3>
+                        <p class="text-gray-600" contenteditable="true">The critical infrastructure that powers the entire stack, especially for headless applications. (e.g., WP Engine)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: My Personal Setup -->
+        <section class="slide flex-col justify-center" data-slide="5">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6" contenteditable="true">My Personal "Vibe Coding" Setup</h2>
+                    <p class="text-lg text-gray-700 mb-6" contenteditable="true">This is the exact toolkit I use to bring my projects to life. Each tool plays a specific, crucial role in turning an idea into a finished product.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <span class="text-wpe-blue font-bold text-xl mt-1">1.</span>
+                            <div>
+                                <h3 class="font-lora text-xl font-bold" contenteditable="true">VS Code + Claude Vertex</h3>
+                                <p class="text-gray-600" contenteditable="true">For hands-on code refinement and debugging, even as a non-coder.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-wpe-blue font-bold text-xl mt-1">2.</span>
+                            <div>
+                                <h3 class="font-lora text-xl font-bold" contenteditable="true">Gemini Canvas</h3>
+                                <p class="text-gray-600" contenteditable="true">My go-to for initial UX, UI design, and generating the foundational front-end code.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-wpe-blue font-bold text-xl mt-1">3.</span>
+                            <div>
+                                <h3 class="font-lora text-xl font-bold" contenteditable="true">ChatGPT</h3>
+                                <p class="text-gray-600" contenteditable="true">Essential for brainstorming, asking architectural questions, and generating sharp prompts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center justify-center text-center">
+                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center" alt="Professional workflow diagram showing development tools and process" class="rounded-lg mb-6 w-full">
+                    <h3 class="text-2xl font-lora font-bold mb-2" contenteditable="true">From Idea to App</h3>
+                    <p class="text-gray-600" contenteditable="true">This combination allows for a rapid, iterative process, all powered by WP Engine's robust hosting.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: My Go-To Technical Stack -->
+        <section class="slide flex-col justify-center items-center" data-slide="6">
+            <div class="w-full max-w-5xl text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" contenteditable="true">My Go-To Technical Stack</h2>
+                <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto" contenteditable="true">For modern, high-performance web applications, this is the stack I'm using most often today to deliver results.</p>
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <!-- React + Vite -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300&h=200&fit=crop&crop=center" alt="React and Vite development" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">React + Vite</h3>
+                        <p class="text-gray-600 text-sm" contenteditable="true">Using <b class="text-wpe-blue">Vite</b> for its blazing fast build times makes the <b class="text-wpe-blue">React</b> development experience incredibly fluid and efficient.</p>
+                    </div>
+
+                    <!-- Supabase / Firebase -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300&h=200&fit=crop&crop=center" alt="Database and backend services" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2" contenteditable="true">Supabase / Firebase</h3>
+                        <p class="text-gray-600 text-sm" contenteditable="true">For the backend, I lean on <b class="text-wpe-blue">Supabase</b> or <b class="text-wpe-blue">Firebase</b>. They provide a scalable database, auth, and serverless functions out-of-the-box.</p>
+                    </div>
+
+                    <!-- WP Engine -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center border-wpe-teal border-2">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center" alt="WP Engine hosting infrastructure" class="rounded-lg mb-4 w-full">
+                        <h3 class="font-lora text-xl font-bold mb-2 text-wpe-blue" contenteditable="true">WP Engine</h3>
+                        <p class="text-gray-600 text-sm" contenteditable="true">And it's all tied together on <b class="text-wpe-blue">WP Engine</b>. Node Engine powers the React front-end, while WordPress handles the CMS component.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Project 1 - Sports Reading App -->
+        <section class="slide" data-slide="7">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&crop=center" alt="Kids reading sports content on tablet" class="rounded-lg mb-6 w-full">
+                </div>
+                <div>
+                    <span class="font-semibold text-wpe-blue uppercase tracking-widest" contenteditable="true">Project 1</span>
+                    <h2 class="text-4xl font-bold my-3" contenteditable="true">Kid's Sports Reading App</h2>
+                    <p class="text-lg text-gray-600 mb-6" contenteditable="true"><b>The Problem:</b> My son needed engaging reading material for the summer that wasn't a chore. <br><b>The Solution:</b> A fun app with biographies of famous athletes and quizzes to test comprehension.</p>
+                    <h3 class="font-lora text-xl font-bold mb-3" contenteditable="true">Tech Stack:</h3>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">WP Engine Node</span>
+                    </div>
+                    <a href="https://ho5rdbw93pmjhru8bqlpxfk66.js.wpenginepowered.com/" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Project 2 - Gamify Sales Dashboard -->
+        <section class="slide" data-slide="8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                 <div>
+                    <span class="font-semibold text-wpe-blue uppercase tracking-widest" contenteditable="true">Project 2</span>
+                    <h2 class="text-4xl font-bold my-3" contenteditable="true">Gamified Sales Dashboard</h2>
+                    <p class="text-lg text-gray-600 mb-6" contenteditable="true"><b>The Problem:</b> The PAM team was drowning in spreadsheets to track KPIs. It was manual and uninspiring. <br><b>The Solution:</b> An experience that measures KPIs as a journey up "Party Parrot Mountain," making performance tracking fun.</p>
+                    <h3 class="font-lora text-xl font-bold mb-3" contenteditable="true">Tech Stack:</h3>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">ACF</span>
+                        <span class="tech-tag">WP Engine Node</span>
+                    </div>
+                    <a href="https://hxequdx75zns6kkr6rht672iw.js.wpenginepowered.com/" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center" alt="Gamified dashboard with mountain climbing theme" class="rounded-lg mb-6 w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Project 3 - Kid's Fitness Tracker -->
+        <section class="slide" data-slide="9">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&crop=center" alt="Kids fitness tracking app interface" class="rounded-lg mb-6 w-full">
+                </div>
+                <div>
+                    <span class="font-semibold text-wpe-blue uppercase tracking-widest" contenteditable="true">Project 3</span>
+                    <h2 class="text-4xl font-bold my-3" contenteditable="true">Kid's Fitness Tracker</h2>
+                    <p class="text-lg text-gray-600 mb-6" contenteditable="true"><b>The Problem:</b> How to motivate neighborhood kids to stay active and build healthy habits. <br><b>The Solution:</b> An app that provides daily workouts, tracks performance, and rewards screen time for completion, with a competitive leaderboard.</p>
+                    <h3 class="font-lora text-xl font-bold mb-3" contenteditable="true">Tech Stack:</h3>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">ACF</span>
+                        <span class="tech-tag">WP Engine Node</span>
+                    </div>
+                    <a href="https://warriorpath.fit" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10: Project 4 - PAM Data Analyzer -->
+        <section class="slide" data-slide="10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                 <div>
+                    <span class="font-semibold text-wpe-blue uppercase tracking-widest" contenteditable="true">Project 4</span>
+                    <h2 class="text-4xl font-bold my-3" contenteditable="true">PAM Data Analyzer</h2>
+                    <p class="text-lg text-gray-600 mb-6" contenteditable="true"><b>The Problem:</b> Sales teams need to blend quantitative sales data with qualitative coaching insights. <br><b>The Solution:</b> A customizable dashboard that tracks metrics, sets goals, and uses AI to generate feedback from meeting notes.</p>
+                    <h3 class="font-lora text-xl font-bold mb-3" contenteditable="true">Tech Stack:</h3>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">GPT-4 API</span>
+                        <span class="tech-tag">Salesforce Integration</span>
+                        <span class="tech-tag">WP Engine Node</span>
+                    </div>
+                    <a href="#" class="btn btn-outline cursor-not-allowed" aria-disabled="true">Local Project</a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center" alt="AI-powered data analytics dashboard" class="rounded-lg mb-6 w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: The Common Thread -->
+        <section class="slide flex-col justify-center items-center text-center" data-slide="11">
+             <div class="w-full max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6" contenteditable="true">The Common Thread</h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto" contenteditable="true">Every one of these projects solves a real-world problem. They were brought to life not by complex, custom-coded backends, but by intelligently combining best-in-class tools.</p>
+                <div class="border-l-4 border-wpe-teal pl-6">
+                    <p class="text-2xl md:text-3xl font-lora italic leading-relaxed" contenteditable="true">
+                        This is the power of the WP Engine platform. It empowers people like me to focus on the <b class="text-wpe-blue">"what"</b> and the <b class="text-wpe-blue">"why,"</b> while the platform handles the <b class="text-wpe-blue">"how."</b>
+                    </p>
+                </div>
+                 <p class="text-xl text-gray-600 mt-8 max-w-3xl mx-auto" contenteditable="true">It's proof that with the right foundation, you don't have to be a traditional developer to build incredible, high-performance digital experiences.</p>
+            </div>
+        </section>
+
+        <!-- Slide 12: Q&A -->
+        <section class="slide flex-col justify-center items-center text-center" data-slide="12">
+            <div class="w-full max-w-4xl">
+                <h1 class="text-6xl md:text-8xl font-bold mb-8" contenteditable="true">Questions?</h1>
+                <p class="text-2xl text-gray-600" contenteditable="true">Thank You</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white/70 backdrop-blur-sm border-t border-gray-200">
+        <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+            <button id="prev-btn" class="btn btn-outline">&larr; Prev</button>
+            <div id="slide-counter" class="text-sm font-medium text-gray-600">Slide 1 / 12</div>
+            <button id="next-btn" class="btn">Next &rarr;</button>
+        </div>
+    </div>
+
+    <script>
+        // Simple presentation logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                // Show the target slide
+                if (slides[index]) {
+                    slides[index].classList.add('active');
+                }
+                updateControls();
+            }
+
+            function updateControls() {
+                // Update counter
+                slideCounter.textContent = `Slide ${currentSlide + 1} / ${totalSlides}`;
+                // Update button states
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+                prevBtn.classList.toggle('opacity-50', currentSlide === 0);
+                prevBtn.classList.toggle('cursor-not-allowed', currentSlide === 0);
+                nextBtn.classList.toggle('opacity-50', currentSlide === totalSlides - 1);
+                nextBtn.classList.toggle('cursor-not-allowed', currentSlide === totalSlides - 1);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                } else if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                }
+            });
+
+            // Initialize
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
